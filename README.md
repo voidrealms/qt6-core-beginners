@@ -1,6 +1,7 @@
 # qt6-core-beginners
 Qt 6 Core for Beginners with C++ on Udemy
 
+<p>
 Section1 – Introduction
     1. What does this course cover
     2. What this course doesn't cover
@@ -198,4 +199,4 @@ Section 15 – Basic Qt Classes
 Bonus Material
     1. How to use the Help System
     2. Continue your journey
- 
+ </p>
