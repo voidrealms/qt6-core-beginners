@@ -1,12 +1,12 @@
 # qt6-core-beginners
 Qt 6 Core for Beginners with C++ on Udemy
-
-Section1 – Introduction
-    1. What does this course cover
-    2. What this course doesn't cover
-    3. Who should take this course
-    4. Course prerequisites
-    5. If you already know C++ (fast forward)
+<br />
+Section1 – Introduction<br />
+    1. What does this course cover<br />
+    2. What this course doesn't cover<br />
+    3. Who should take this course<br />
+    4. Course prerequisites<br />
+    5. If you already know C++ (fast forward)<br />
     6. Who is the instructor
     7. Raw and unfiltered
     8. Qt overview – core, widgets, qml 
