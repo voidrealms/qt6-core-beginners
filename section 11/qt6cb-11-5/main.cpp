@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 
     Radio boombox;
     Station* channels[3];
-
+    bool bOn = false;
     //create some stations
     channels[0] = new Station(&boombox,94,"Rock and Roll");
     channels[1] = new Station(&boombox,87,"Hip Hop");
@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
         QTextStream qtin(stdin);
         QString line = qtin.readLine().trimmed().toUpper();
 
-        if(line == "ON")
+        if((line == "ON") && (bOn==false)) //if(line == "ON")
         {
             qInfo() << "Turning the radio on";
             for(int i = 0; i< 3; i++)
@@ -55,6 +55,7 @@ int main(int argc, char *argv[])
                 boombox.connect(channel,&Station::send,&boombox, &Radio::listen);
             }
             qInfo() << "Radio is on";
+            bOn = true;
         }
 
         if(line == "OFF")
@@ -66,6 +67,7 @@ int main(int argc, char *argv[])
                 boombox.disconnect(channel,&Station::send,&boombox, &Radio::listen);
             }
             qInfo() << "Radio is off";
+            bOn = false;
         }
 
         if(line == "TEST")
